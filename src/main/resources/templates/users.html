@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>사용자 목록</title>
+	
+		<!-- Bootstrap -->
+		<link href="/webjars/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">YWMobile</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/login.html">파트너사 등록</a></li>
+						<li><a href="/users">사용자 목록</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<table class="table table-condensed">
+				<caption>사용자 목록</caption>
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">아이디</th>
+						<th scope="col">패스워드</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#users}}
+					<tr>
+						<th scope="row">1</th>
+						<td>{{userId}}</td>
+						<td>{{password}}</td>
+					</tr>
+					{{/users}}
+				</tbody>
+			</table>
+		</div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+		
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="/webjars/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
