@@ -262,6 +262,7 @@ form.sign-up-form {
 }
 
 .panel p {
+	color: #111;
 	font-size: 0.95rem;
 	padding: 0.7rem 0;
 }
